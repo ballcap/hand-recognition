@@ -13,7 +13,7 @@ document.getElementById("uploadForm").addEventListener("submit", async function(
     reader.onload = async function() {
         const imageBase64 = reader.result.split(",")[1];
         try {
-            const response = await fetch("https://detect.roboflow.com/hand-gesture-recognition-y5827/2?api_key=4UvlBs9S1ryZ057JVPnR&confidence=50", {
+            const response = await fetch("https://detect.roboflow.com/hand-gesture-recognition-y5827/2?api_key=4UvlBs9S1ryZ057JVPnR", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/x-www-form-urlencoded"
