@@ -21,12 +21,19 @@
         .success {
             color: #17ea17;
         }
+        #loading {
+            display: none;
+            font-size: 16px;
+            color: #5f5f5f;
+            margin: 10px 0;
+        }
     </style>
 </head>
 
 <body>
     <h1>Hand Detection</h1>
     <input type="file" id="imageInput" accept="image/*">
+    <p id="loading">Loading, please wait...</p>
     <canvas id="canvas"></canvas>
     <p id="result"></p>
 
