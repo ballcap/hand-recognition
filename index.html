@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Detection</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/hand-pose-detection"></script>
+    <style>
+        canvas {
+            max-width: 100%;
+            display: none;
+        }
+        #result {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .error {
+            color: #ea1717;
+        }
+        .success {
+            color: #17ea17;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hand Detection</h1>
+    <input type="file" id="imageInput" accept="image/*">
+    <canvas id="canvas"></canvas>
+    <p id="result"></p>
+
+    <script src="/api-call.js"></script>
+</body>
+</html>
